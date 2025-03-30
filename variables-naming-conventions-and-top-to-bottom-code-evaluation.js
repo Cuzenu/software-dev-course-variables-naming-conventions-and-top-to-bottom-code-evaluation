@@ -21,12 +21,23 @@ Things to reflect on:
   - Why is it important to use meaningful variable names?
   - What are the common pitfalls to avoid when naming variables?
   - How do clear variable names benefit team collaboration?
+
+  1. None of variables are descriptive, they are letters without context.
+    Renamed variables with correct formatting
+      a -> customerName
+      b-> quantityPurchased
+      c -> totalCost
+      d -> shoppingTripSummary
+  2. Added 2 new variables: storeName, paymentMethod
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let quantityPurchased = 5;
+let totalCost = 20;
+let storeName = "Target"; // Added a new variable to specify the store name
+let paymentMethod = "credit card"; // Added a new variable to specify the payment method
+let shoppingTripSummary = customerName + " bought " + quantityPurchased + " items at " + storeName + " for $" + totalCost + " with her " + paymentMethod + ".";
 
-console.log(d);
+console.log(shoppingTripSummary);
+
